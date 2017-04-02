@@ -11,7 +11,7 @@ gem 'rails', '~> 5.0.2'
 gem 'capistrano', '~> 3.4.0'
 gem 'capistrano-rails', '~> 1.1'
 gem 'capistrano-passenger'
-
+gem 'ruby', '~>2.3.1' 
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
