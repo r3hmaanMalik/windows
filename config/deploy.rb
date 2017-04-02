@@ -1,6 +1,6 @@
 # config valid only for current version of Capistrano
 lock '3.4.1'
-
+set :rvm_ruby_string, '2.3.1'
 set :application, 'blog'
 set :repo_url, 'https://github.com/r3hmaanMalik/windows.git'
 #example 'git@github.com :melissawahnish/ruby-thursday.git'
