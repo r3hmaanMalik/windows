@@ -1,8 +1,15 @@
 # config valid only for current version of Capistrano
 lock '3.4.1'
 
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'blog'
+set :repo_url, 'https://github.com/r3hmaanMalik/windows.git'
+#example 'git@github.com :melissawahnish/ruby-thursday.git'
+set :user, "deploy"
+set :stages, %w(production staging)
+set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids',
+'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
+
+
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
